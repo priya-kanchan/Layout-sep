@@ -8,5 +8,155 @@
 
 }
 @media (max-width:967px){
+    header{
+        height: auto;
+    }
+    .navbar-container{
+            max-width: 94% !important;
+    margin: 0 auto;
+    padding: 0 !important;
+    }
+.banner_content_box{
+          width: 100%;
+        gap: 0;
+        top: 21%;
+}
+#offcanvasDarkNavbar{
+    width: 80%;
+}
+.banner_content_box h1 {
+    width: 100%;
+    font-size: 18px;
+    gap: 16px;
+}
+.banner_g_lineL{
+ width: 30px;
+}
+.banner_g_lineR{
+   width: 30px;
+}
+.banner-content-bottom{
+    display: none;
+}
+.banner_content_box .button-box{
+    display: none;
+}
+/* overview */
+.overview-section {
+    padding: 30px 0;}
 
+.section-title{
+font-size: 18px;
+}
+.overview-left-box{
+        background: #000414;
+        background: linear-gradient(0deg, rgba(0, 4, 20, 1) 0%, rgba(0, 4, 20, 0) 100%);
+        padding: 60px 30px 107px 30px;
+    }
+.highlight_g_left::before, .highlight_g_left::after{
+           width: 150px;
+        left: -55px;
+    }
+.highlight_g_left::before{
+
+top: 120px;
+}
+ .highlight_g_left::after{
+
+top: -88px;
+
+}
+.highlight_g_right::before, .highlight_g_right::after{
+            width: 150px;
+        left: -55px;
+    }
+.highlight_g_right::before{
+top: 120px;
+}
+.highlight_g_right::after{
+    top: -88px;
+}
+
+
+.section-title .g_right_line{
+width: 100px;
+}
+.overview_main_box{
+    padding: 0 20px;
+}
+.para {
+    width: 100%;
+    font-size: 15px;
+}
+.overview_img-box {
+   margin-top: -70px;
+    margin-left: 0;}
+
+
+    /* Highlights */
+.highlight_main_box {
+    text-align: center;
+}
+.highlight_right_box{
+    display: none;
+}
+.highlight_middle_section{
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px;
+}
+.highlight_g_left, .highlight_g_right{
+    transform: rotate(90deg);
+}
+
+
+.highlight-section .button-box {
+    margin-top: 26px;
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+
+
+/* amenities */
+.amenities_main_box {
+    flex: 1 1 calc(50% - 25px); /* 2 per row */
+  }
+   .amenities_img_box img{
+  height: 350px;
+ }
+ .amenities_main_box:last-child{
+    display: none;
+ }
+/* Floor plan */
+.floor-button {
+    padding: 20px 41px !important;
+}
+#pills-tab {
+    gap: 5px;
+}
+.floor_right-content_box{
+width: 100%;
+}
+.floor_main_box{
+    margin-top: 35px;
+}
+/* Price list */
+.price_small_section h4 {
+    font-size: 16px;}
+.price_small_section p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+td:nth-child(2), td:nth-child(3) {
+    text-align: left;
+}
+.price_small_section sub{
+font-size: 14px;
+}
+.price_table {
+    margin-top: 0;
+}
+.price_list_section .button-box{
+  margin-top: 20px;
+}
 }
