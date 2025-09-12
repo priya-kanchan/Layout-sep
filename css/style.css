@@ -889,3 +889,102 @@ td:nth-child(2), td:nth-child(3){
 .price_list_section .button-box{
   margin-top: 50px;
 }
+
+
+/* Location Style */
+
+.location-section{
+   position: relative;
+  width: 100%;
+  padding: 80px 0;
+  overflow: hidden;
+  background-color: var(--secondary-bg-color);
+}
+
+.location_middle_box{
+  position: relative;
+}
+ .location_g_right{
+
+    width: 1px;
+    height: 100%;
+    background: #e8d8ac;
+    background: linear-gradient(180deg, rgba(232, 216, 172, 0) 0%, rgba(232, 216, 172, 1) 55%, rgba(232, 216, 172, 0.06) 100%);
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    transform: translateX(-50%);
+    z-index: 99;
+} 
+.location_g_left{
+width: 1px;
+    height: 100%;
+    background: #e8d8ac;
+    background: linear-gradient(180deg, rgba(232, 216, 172, 0) 0%, rgba(232, 216, 172, 1) 55%, rgba(232, 216, 172, 0.06) 100%);
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.location_small_box{
+text-align: end;
+}
+.location_small_box h3{
+color: #E8D8AC;
+
+text-align: right;
+
+font-family: var(--font-Cinzel);
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 155.556% */
+letter-spacing: 0.5px;
+text-transform: capitalize;
+margin-bottom: 0;
+}
+.location_small_box p{
+color: #FFF;
+font-family: var(--font-Poppins);
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 28px;
+letter-spacing: 0.5px;
+text-transform: capitalize;
+}
+.location_left_main_box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.location_main_box{
+ display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 25px;
+
+}
+.location_main_box .g_right_line{
+
+    background: #E8D8AC;
+/* background: linear-gradient(260deg,rgba(232, 216, 172, 0) 0%, rgba(232, 216, 172, 1) 100%); */
+    height: 1px;
+    width: 100px;
+    position: relative;
+
+}
+.location_main_box .g_right_line::before {
+    content: " ";
+    position: absolute;
+    /* right: -5px; */
+      left: 0%;
+    top: 48%;
+    transform: translateY(-50%) rotate(46deg);
+    width: 5px;
+    height: 5px;
+    background: #e8d8ac;
+}

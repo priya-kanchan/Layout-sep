@@ -8,6 +8,12 @@
 
 }
 @media (max-width:967px){
+    .button-box {
+        justify-content: start;
+    }
+    .amenities-box{
+        padding: 0 15px;
+    }
     header{
         height: auto;
     }
