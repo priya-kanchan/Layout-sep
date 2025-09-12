@@ -1,5 +1,7 @@
 @media (max-width:1400px){
-    
+    .location_small_box p, .location_right_small_box p{
+        font-size: 12px;
+    }
 }
 @media (max-width:1366px){
 
@@ -165,4 +167,69 @@ font-size: 14px;
 .price_list_section .button-box{
   margin-top: 20px;
 }
+
+/* Location Style responsive */
+
+.location_left_main_box .location_main_box{
+    flex-direction: row-reverse !important;
+}
+
+
+
+
+.g_left_line{
+                  transform: rotate(90deg);
+                  margin-left: -24px;
+                  width: 85px !important;
+                  margin-top: 35px;
+}
+.location_right_main_box .g_right_line{
+                   transform: rotate(-90deg);
+                   margin-left: -20px;
+                   width: 85px !important;
+                   margin-top: 26px;
+}
+.location_small_box, .location_small_box h3{
+text-align: left;
+}
+.location_main_box {
+    justify-content: start;
+    gap: 6px;
+   
+}
+.location_right_small_box, .location_small_box{
+ margin-left: -16px;
+ }
+ .location_left_main_box{
+    margin-top: 50px;
+ }
+.location_right_main_box{
+           margin-top: 35px;
+}
+.location_right_main_box .location_main_box:last-child .g_right_line {
+    /* display: none; */
+  }
+.location_right_main_box .location_main_box .g_right_line::after {
+    content: " ";
+    position: absolute;
+    /* right: -5px; */
+      left: 0%;
+    top: 48%;
+    transform: translateY(-50%) rotate(46deg);
+    width: 5px;
+    height: 5px;
+    background: #e8d8ac;
+
+  }
+/* .location_right_main_box .location_main_box:last-child .g_right_line::before {
+    display: block;
+  } */
+
+
+
+
+
+
+
+
 }
