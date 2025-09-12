@@ -226,10 +226,19 @@ text-align: left;
   } */
 
 
+/* Developer responsive */
+.developer_main_box{
+    flex-direction: column;
+    
+}
 
+/* Conatct Section */
+.form-box{
+width: 100%;
+}
 
-
-
-
+.buiding_img{
+    display: none;
+}
 
 }
