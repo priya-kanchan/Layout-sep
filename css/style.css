@@ -72,6 +72,8 @@
   --font-Lato: "Lato", sans-serif; 
   --font-Source-Code-Pro: "Source Code Pro", monospace; 
 }
+
+
 .navbar-container {
   max-width: 94% !important;
   margin: 0 auto;
