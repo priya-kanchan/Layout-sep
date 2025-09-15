@@ -355,7 +355,7 @@ border-bottom: 1px solid var(--secondary-bg-color) !important;
 font-size: 20px;
 
 }
-
+}
 @media(max-width:375px){
     .offcanvas-body .nav-item, .offcanvas-body .nav-item .nav_g_line {
     
@@ -378,7 +378,7 @@ font-size: 20px;
     .amenities_top_box p, .amenities_bottom_box p {
     font-size: 14px;
     color: #fff;
-}
+    }
     .floor-button {
         padding: 19px 36px !important;
     }
