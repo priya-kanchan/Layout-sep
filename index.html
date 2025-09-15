@@ -1,1013 +1,979 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responisve.css">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" /> -->
-  </head>
-  <body>
-    <header >
-      <nav class="navbar navbar-dark fixed-top">
-        <div class="container-fluid navbar-container">
-          <!-- Left Side Brand -->
-          <a class="navbar-brand" href="#">
-            <img src="images/logo-icon.svg" alt="" />
-          </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responisve.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" /> -->
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-dark fixed-top p-md-0">
+                <div class="container-fluid navbar-container">
+                    <!-- Left Side Brand -->
+                    <a class="navbar-brand navbar_flex_chield" href="#">
+                        <img src="images/logo-icon.svg" alt="" />
+                    </a>
 
-          <!-- Center Text -->
-          <div class="mx-auto text-white fw-bold d-none d-sm-block">
-            <span class="logo-text">Logoipsm</span>
-          </div>
+                    <!-- Center Text -->
+                    <div class="mx-auto position-absolute start-50 translate-middle-x text-white fw-bold d-none d-sm-block">
+                        <span class="logo-text">Logoipsm</span>
+                    </div>
 
-          <!-- Right Side Toggler -->
-          <div class="d-flex right-side-navbar">
-            <button class="number">
-              <img src="images/phone.svg" alt="" />
-              +91-9999999999
-            </button>
+                    <!-- Right Side Toggler -->
+                    <div class="d-flex navbar_flex_chield3 right-side-navbar">
+                        <button class="number">
+                            <img src="images/phone.svg" alt="" />
+                            +91-9999999999
+                        </button>
 
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-            >
-              <i
-                class="fa-solid fa-bars"
-                style="color: #fff; font-size: 27px"
-              ></i>
-            </button>
-          </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                            <i class="fa-solid fa-bars" style="color: #fff; font-size: 27px;"></i>
+                        </button>
+                    </div>
 
-          <!-- Offcanvas Menu -->
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                <img src="images/logo-icon.svg" alt="" width="40px"/>
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-center flex-grow-1">
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Overview</a>
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Highlights</a>
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Price-List</a>
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Floor Plan</a>
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Amenities</a>
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Gallery</a>
-                </li>
-                <li class="nav-item nav_g_line">
-                  <a class="nav-link" href="#">Location</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Banner section -->
-
-      <div class="banner_img_box">
-        <img src="images/bannre3.jpg" alt="" class="img-fluid d-md-block d-none" />
-        <img src="images/mobile-banner.png" alt="" class="img-fluid d-md-none d-block mobile-banner" />
-      </div>
-      <div class="banner_content_box">
-        <p class="banner_address">Sector 15, Gurugram</p>
-        <h1 class="d-flex ">
-            <div class="banner_g_lineL"></div>
-             Experience the world of luxury 
-             <div class="banner_g_lineR"></div>
-        </h1>
-
-        <div class="banner-content-bottom">
-
-            <p class="banner-para">2 BHK & 3 BHK</p>
-            
-            <p class="banner-para g_line">Starting From <span>₹ 14 Cr*</span> Onwards</p>
-            <p class="banner-para">New Launch</p>
-        </div>
-        <div class="button-box" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span>Get Exclusive brochure</span>
-        </div>
-
-
-      </div>
-    </header>
-
-    <!-- Overview -->
-    <section class="overview-section">
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-8 col-12 ">
-            <div class="overview-left-box">
-              <h1 class="section-title ">Project Overview <div class="g_right_line"></div></h1>
-              <p class="para">A rare collection of homes that embody timeless luxury and refined living. Every detail—architectural design, imported finishes, expansive layouts, and curated experiences—has been crafted to deliver an unparalleled lifestyle. This is more than a residence; it is a statement of legacy.</p>
-              <div>
-                <div class="button-box mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <span>Enquire now</span>
+                    <!-- Offcanvas Menu -->
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                                <img src="images/logo-icon.svg" alt="" width="40px" />
+                            </h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-center flex-grow-1">
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#overview">Overview</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#highlights">Highlights</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#price_list">Price-List</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#floor_plan">Floor Plan</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#amenities">Amenities</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item nav_g_line">
+                                    <a class="nav-link" href="#location">Location</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12 ">
-                <div class="overview_main_box">
-                  <div class="overview_img-box">
-                <img src="images/overview.jpg" alt="" class="img-fluid">
-                </div>
-                </div>
-          </div>
-              
-          </div>
-        </div>
-      </div>
-    </section>
+            </nav>
 
-<!-- Highlights -->
-  <section class="highlight-section">
-    <div class="container">
-      <div class="highlight-left-box">
-              <h1 class="section-title ">KEY HIGHLIGHTS <div class="g_right_line"></div></h1>
-               </div>
-    </div>
+            <!-- Banner section -->
+
+            <div class="banner_img_box">
+                <img src="images/bannre3.jpg" alt="" class="img-fluid d-md-block d-none" />
+                <img src="images/mobile-banner.png" alt="" class="img-fluid d-md-none d-block mobile-banner" />
+            </div>
+            <div class="banner_content_box">
+                <p class="banner_address">Sector 15, Gurugram</p>
+                <h1 class="d-flex">
+                    <div class="banner_g_lineL"></div>
+                    Experience the world of luxury
+                    <div class="banner_g_lineR"></div>
+                </h1>
+
+                <div class="banner-content-bottom">
+                    <p class="banner-para">2 BHK & 3 BHK</p>
+
+                    <p class="banner-para g_line">Starting From <span>₹ 14 Cr*</span> Onwards</p>
+                    <p class="banner-para">New Launch</p>
+                </div>
+                <div class="button-box" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span>Get Exclusive brochure</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="d-md-none d-block mobile_price_content">
+            <p class="banner-para">Starting From <span>₹ 14 Cr*</span> Onwards</p>
+
+            <div class="banner-mobile-content-bottom">
+                <p class="banner-para">2 BHK & 3 BHK</p>
+                <div class="mobile_g_line"></div>
+                <p class="banner-para">New Launch</p>
+            </div>
+        </div>
+
+        <!-- Overview -->
+        <section class="overview-section" id="overview">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-12">
+                        <div class="overview-left-box main-top-left-box">
+                            <h1 class="section-title">
+                                Project Overview
+                                <div class="g_right_line"></div>
+                            </h1>
+                            <p class="para">
+                                A rare collection of homes that embody timeless luxury and refined living. Every detail—architectural design, imported finishes, expansive layouts, and curated experiences—has been crafted to deliver an
+                                unparalleled lifestyle. This is more than a residence; it is a statement of legacy.
+                            </p>
+                            <div>
+                                <div class="button-box mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span>Enquire now</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="overview_main_box">
+                            <div class="overview_img-box">
+                                <img src="images/overview.jpg" alt="" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights -->
+        <section class="highlight-section" id="highlights">
+            <div class="container">
+                <div class="main-top-left-box">
+                    <h1 class="section-title">
+                        KEY HIGHLIGHTS
+                        <div class="g_right_line"></div>
+                    </h1>
+                </div>
+            </div>
             <div class="container-fluid">
-             <div class="row ">
-        
-                <div class="col-md-3 col-12 p-0 ">
-                    <div class="highlight_main_box">
-                    <div class="highlight_left_box">
-                  <img src="images/highlight1.png" alt="" class="img-fluid d-md-block d-none">
-                  <img src="images/mobile-highlights.png" alt="" class="img-fluid d-md-none d-block">
-                  </div>
-                </div>
-                </div>
-                <div class="col-md-6 col-12 p-0">
+                <div class="row">
+                    <div class="col-md-3 col-12 p-0">
+                        <div class="highlight_main_box">
+                            <div class="highlight_left_box">
+                                <img src="images/highlight1.png" alt="" class="img-fluid d-md-block d-none" />
+                                <img src="images/mobile-highlights.png" alt="" class="img-fluid d-md-none d-block" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 p-0">
+                        <div class="highlight_middle_section">
+                            <div class="highlight_g_left"><img src="images/start-icon.png" alt="" /></div>
+                            <div class="center_box">
+                                <div class="highlight_box">
+                                    <h3>Prime Location</h3>
+                                    <p>Nestled in the city’s most prestigious neighborhood</p>
+                                </div>
+                                <div class="highlight_box">
+                                    <h3>Ultra-Spacious Homes</h3>
+                                    <p>Expansive residences with private terraces & decks</p>
+                                </div>
+                                <div class="highlight_box">
+                                    <h3>Exclusive Lifestyle</h3>
+                                    <p>Concierge, butler, valet & residents-only privileges</p>
+                                </div>
+                                <div class="highlight_box">
+                                    <h3>Global Standards</h3>
+                                    <p>Premium finishes, imported fittings & smart home systems</p>
+                                </div>
+                                
+                                <div class="highlight_box">
+                                    <h3>Limited Inventory</h3>
+                                    <p>Ensuring privacy, exclusivity, and rarity of ownership</p>
+                                </div>
+                            </div>
+                            <div class="highlight_g_right"><img src="images/start-icon.png" alt="" /></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 p-0 d-flex align-items-end justify-content-end">
+                        <div class="highlight_main_box">
+                            <div class="highlight_right_box">
+                                <img src="images/highlight2.png" alt="" class="img-fluid" />
+                            </div>
+                        </div>
+                    </div>
 
-                  <div class="highlight_middle_section">
-                    <div class="highlight_g_left"><img src="images/start-icon.png" alt=""></div>
-                    <div class="center_box">
-                      <div class="highlight_box">
-                      <h3>Prime Location</h3>
-                      <p>Nestled in the city’s most prestigious neighborhood</p>
+                    <div class="button-box" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span>Get Exclusive Brochure</span>
                     </div>
-                    <div class="highlight_box">
-                      <h3>Ultra-Spacious Homes </h3>
-                      <p>Expansive residences with private terraces & decks</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities-->
+        <section class="amenities-section" id="amenities">
+            <div class="container">
+                <div class="row">
+                    <div class="main-top-left-box">
+                        <h1 class="section-title">
+                            Amenities
+                            <div class="g_right_line"></div>
+                        </h1>
+                        <p class="amenities_sab_title">
+                            Every amenity has been curated to match the global standards of luxury. From private indulgences to social gatherings, this project ensures an experience that is both personal and world-class.
+                        </p>
                     </div>
-                    <div class="highlight_box">
-                      <h3>Exclusive Lifestyle</h3>
-                      <p> Concierge, butler, valet & residents-only privileges</p>
+                </div>
+            </div>
+
+            <div class="amenities-box">
+                <div class="amenities_main_box">
+                    <div class="amenities_img_box">
+                        <img src="images/amenities/swimming-pool.png" alt="" class="img-fluid" />
                     </div>
-                    <div class="highlight_box">
-                      <h3>Global Standards</h3>
-                      <p> Premium finishes, imported fittings & smart home systems</p>
+                    <div class="amenities_bottom_box">
+                        <img src="images/amenities/amenities-icon/swimming-icon.png" alt="" />
+                        <p>Infinity Pool</p>
                     </div>
-                    <!-- <div class="highlight_box">
-                      <h3>Global Standards </h3>
-                      <p>Premium finishes, imported fittings & smart home systems</p>
-                    </div> -->
-                    <div class="highlight_box">
-                      <h3>Limited Inventory </h3>
-                      <p>Ensuring privacy, exclusivity, and rarity of ownership</p>
+                </div>
+
+                <div class="amenities_main_box">
+                    <div class="amenities_top_box">
+                        <img src="images/amenities/amenities-icon/theater.svg" alt="" />
+                        <p>Private Theatre</p>
+                    </div>
+                    <div class="amenities_img_box">
+                        <img src="images/amenities/theater.jpg" alt="" class="img-fluid" />
+                    </div>
+                </div>
+
+                <div class="amenities_main_box">
+                    <div class="amenities_img_box">
+                        <img src="images/amenities/gym.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="amenities_bottom_box">
+                        <img src="images/amenities/amenities-icon/yoga.svg" alt="" />
+                        <p>Smart Fitness Studio</p>
+                    </div>
+                </div>
+
+                <div class="amenities_main_box">
+                    <div class="amenities_top_box">
+                        <img src="images/amenities/amenities-icon/play-area.svg" alt="" />
+                        <p>Children’s Play Studio</p>
+                    </div>
+                    <div class="amenities_img_box">
+                        <img src="images/amenities/play-area.jpg" alt="" class="img-fluid" />
+                    </div>
+                </div>
+
+                <div class="amenities_main_box">
+                    <div class="amenities_img_box">
+                        <img src="images/amenities/spa.jpg" alt="" class="img-fluid" />
+                    </div>
+                    <div class="amenities_bottom_box">
+                        <img src="images/amenities/amenities-icon/spa.svg" alt="" />
+                        <p>Luxury Spa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span>Get Exclusive brochure</span>
+                </div>
+            </div>
+        </section>
+        <!-- Floor Plan -->
+        <section class="section_floor" id="floor_plan">
+            <div class="container">
+                <div class="row">
+                    <div class="main-top-left-box">
+                        <h1 class="section-title">
+                            Floor Plans
+                            <div class="g_right_line"></div>
+                        </h1>
+                        <p class="amenities_sab_title">Layouts that elevate spatial design to an art form. Expansive living areas, private decks, natural light, and intelligent flow ensure a home that balances luxury with liveability.</p>
+                    </div>
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active floor-button" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                2 BHK
+                                <span class="diamond tl"></span>
+                                <span class="diamond tr"></span>
+                                <span class="diamond bl"></span>
+                                <span class="diamond br"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link floor-button" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                3 BHK
+                                <span class="diamond tl"></span>
+                                <span class="diamond tr"></span>
+                                <span class="diamond bl"></span>
+                                <span class="diamond br"></span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link floor-button" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                4 BHK
+                                <span class="diamond tl"></span>
+                                <span class="diamond tr"></span>
+                                <span class="diamond bl"></span>
+                                <span class="diamond br"></span>
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <!-- Home Tab -->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="row text-white align-items-center">
+                                <div class="col-md-8 col-12 text-center">
+                                    <img src="images/floor-plan.png" class="img-fluid" alt="Home Image" />
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="floor_main_box">
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/super-area.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Super Area</h4>
+                                                    <p>2500 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                            <div class="floor_g_line"></div>
+                                        </div>
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/scale.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Carpet Area</h4>
+                                                    <p>1500 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                            <div class="floor_g_line"></div>
+                                        </div>
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/balcony.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Balcony Area</h4>
+                                                    <p>1200 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Tab -->
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="row text-white align-items-center">
+                                <div class="col-md-8 col-12 text-center">
+                                    <img src="images/floor-plan.png" class="img-fluid" alt="Profile Image" />
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="floor_main_box">
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/super-area.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Super Area</h4>
+                                                    <p>2500 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                            <div class="floor_g_line"></div>
+                                        </div>
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/scale.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Carpet Area</h4>
+                                                    <p>1500 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                            <div class="floor_g_line"></div>
+                                        </div>
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/balcony.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Balcony Area</h4>
+                                                    <p>1200 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Tab -->
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="row text-white align-items-center">
+                                <div class="col-md-8 col-12 text-center">
+                                    <img src="images/floor-plan.png" class="img-fluid" alt="Contact Image" />
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="floor_main_box">
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/super-area.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Super Area</h4>
+                                                    <p>2500 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                            <div class="floor_g_line"></div>
+                                        </div>
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/scale.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Carpet Area</h4>
+                                                    <p>1500 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                            <div class="floor_g_line"></div>
+                                        </div>
+                                        <div class="floor_right-content_box">
+                                            <div class="floor_box_start">
+                                                <img src="images/icons/balcony.svg" alt="" />
+                                                <div class="small_box">
+                                                    <h4>Balcony Area</h4>
+                                                    <p>1200 Sq. Ft.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <span>View Plan</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price List -->
+
+        <section class="price_list_section" id="price_list">
+            <video class="vedio-section" autoplay muted loop playsinline>
+                <source src="images/price_video.mp4" type="video/mp4" />
+            </video>
+
+            <!-- Overlay Layer -->
+            <div class="video-overlay"></div>
+
+            <div class="container content-box">
+                <div class="row">
+                    <div class="main-top-left-box">
+                        <h1 class="section-title">
+                            Residences & Pricing
+                            <div class="g_right_line"></div>
+                        </h1>
+                        <p class="amenities_sab_title">
+                            Crafted for connoisseurs of luxury, each residence unites scale, privacy, and prestige. A rare home, remarkable in every sense, embodying timeless elegance, grandeur, distinction, and unrivaled sophistication.
+                        </p>
+                    </div>
+
+                    <div>
+                        <table class="table table-borderless price_table">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="price_small_section">
+                                            <p>Typology</p>
+                                            <h4>2 BHK</h4>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price_small_section new-price">
+                                            <div class="typology">
+                                                <p>Size</p>
+                                                <h4>1750 <sub>Sq.ft.</sub></h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price_small_section new-price">
+                                            <div class="typology">
+                                                <p>Starting From</p>
+                                                <h4>₹ 2 CR* <sub>Onwards</sub></h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="price_small_section">
+                                            <p>Typology</p>
+                                            <h4>2 BHK</h4>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price_small_section new-price">
+                                            <div class="typology">
+                                                <p>Size</p>
+                                                <h4>1750 <sub>Sq.ft.</sub></h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price_small_section new-price">
+                                            <div class="typology">
+                                                <p>Starting From</p>
+                                                <h4>₹ 2 CR* <sub>Onwards</sub></h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <div class="floor_g_line"></div>
+
+                                <tr>
+                                    <td>
+                                        <div class="price_small_section">
+                                            <p>Typology</p>
+                                            <h4>2 BHK</h4>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price_small_section new-price">
+                                            <div class="typology">
+                                                <p>Size</p>
+                                                <h4>1750 <sub>Sq.ft.</sub></h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price_small_section new-price">
+                                            <div class="typology">
+                                                <p>Starting From</p>
+                                                <h4>₹ 2 CR* <sub>Onwards</sub></h4>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>Get pricing details</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Map -->
+        <section class="location-section" id="location">
+            <div class="container">
+                <div class="row">
+                    <div class="main-top-left-box">
+                        <h1 class="section-title">
+                            LOCATION ADVANTAGES
+                            <div class="g_right_line"></div>
+                        </h1>
+                        <p class="amenities_sab_title">
+                            Set in the heart of the city’s most sought-after enclave, the project combines exclusivity with unmatched connectivity. Surrounded by fine dining, elite schools, luxury retail, and cultural hubs, this address
+                            ensures that every need is just minutes away.
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-12 p-1 order-md-0 order-1">
+                        <div class="location_left_main_box">
+                            <div class="location_main_box">
+                                <div class="location_small_box">
+                                    <h3>5 mINS</h3>
+                                    <p>from Luxury Mall & Fine Dining District</p>
+                                </div>
+                                <div class="g_left_line"></div>
+                            </div>
+                            <div class="location_main_box">
+                                <div class="location_small_box">
+                                    <h3>5 mINS</h3>
+                                    <p>from Luxury Mall & Fine Dining District</p>
+                                </div>
+                                <div class="g_left_line"></div>
+                            </div>
+                            <div class="location_main_box">
+                                <div class="location_small_box">
+                                    <h3>5 mINS</h3>
+                                    <p>from Luxury Mall & Fine Dining District</p>
+                                </div>
+                                <div class="g_left_line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 order-md-1 order-0">
+                        <div class="location_middle_box">
+                            <div class="location_g_left"></div>
+                            <img src="images/location-map.png" alt="" class="img-fluid" />
+                            <div class="location_g_right"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 p-0 order-md-2 order-2">
+                        <div class="location_right_main_box">
+                            <div class="location_main_box">
+                                <div class="g_right_line"></div>
+
+                                <div class="location_right_small_box">
+                                    <h3>5 mINS</h3>
+                                    <p>from Luxury Mall & Fine Dining District</p>
+                                </div>
+                            </div>
+                            <div class="location_main_box">
+                                <div class="g_right_line"></div>
+
+                                <div class="location_right_small_box">
+                                    <h3>5 mINS</h3>
+                                    <p>from Luxury Mall & Fine Dining District</p>
+                                </div>
+                            </div>
+                            <div class="location_main_box">
+                                <div class="g_right_line"></div>
+
+                                <div class="location_right_small_box">
+                                    <h3>5 mINS</h3>
+                                    <p>from Luxury Mall & Fine Dining District</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <span>Get Exclusive brochure</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="main-top-left-box">
+                        <h1 class="section-title">
+                            Gallery
+                            <div class="g_right_line"></div>
+                        </h1>
+                        <p class="amenities_sab_title">
+                            Step into a world of refined artistry and design. Each space, from the grand façade to the intimate interiors, has been meticulously crafted to reflect a lifestyle reserved for the privileged few.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conatiner-fluid">
+                <div class="gallery-box">
+                    <!-- Top Row -->
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row -->
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g1.png" class="img-fluid" /></div>
+                            <div class="swiper-slide"><img src="images/g2.png" class="img-fluid" /></div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="gallery_bottom">
+                                <div class="swiper-pagination"></div>
+
+                                <div class="button-box" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span>Get Exclusive brochure</span>
+                                </div>
+                                <!-- Navigation -->
+                                <div class="gallery-nav">
+                                    <div class="gallery-btn gallery-prev"><img src="images/icons/left-arrow.png" alt="" /></div>
+                                    <div class="gallery-btn gallery-next"><img src="images/icons/right-arrow.png" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Developer section -->
+
+        <section class="developer-section">
+            <video class="developer-vedio-section" autoplay muted loop playsinline>
+                <source src="images/developer-vedio.mp4" type="video/mp4" />
+            </video>
+
+            <!-- Overlay Layer -->
+            <div class="video-overlay"></div>
+
+            <div class="container content-box">
+                <div class="row">
+                    <div class="main-top-left-box">
+                        <div class="mb-5">
+                            <img src="images/logo-icon.svg" alt="" width="45px" />
+                        </div>
+                        <h1 class="section-title">
+                            ABOUT DEVELOPER
+                            <div class="g_right_line"></div>
+                        </h1>
+                        <p class="amenities_sab_title">
+                            With a legacy of delivering world-class residences and iconic landmarks, Signature Realty has earned the trust of the world’s most discerning homeowners. This ultra-luxury project reflects our vision to craft
+                            timeless living spaces for a select few.
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <div class="developer_main_box">
+                            <div class="developer-box">
+                                <h3>20+</h3>
+                                <p>Years of Excellence</p>
+                            </div>
+                            <div class="developer-box">
+                                <h3>50+</h3>
+                                <p>Luxury Projects</p>
+                            </div>
+                            <div class="developer-box">
+                                <h3>12</h3>
+                                <p>Design Awards</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    </div>
-                  <div class="highlight_g_right"><img src="images/start-icon.png" alt=""></div>
-                  </div>
-
-                </div> 
-                <div class="col-md-3 col-12 p-0 d-flex align-items-end justify-content-end">
-                  <div class="highlight_main_box">
-                    <div class="highlight_right_box">
-                      <img src="images/highlight2.png" alt="" class="img-fluid">
-                    </div>
-                  </div>
                 </div>
+            </div>
+        </section>
+        <!-- Contact section -->
+        <section class="contact-form" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-12">
+                        <div class="main-top-left-box">
+                            <h1 class="section-title d-none d-md-flex">
+                                Reserve Your Private Residence Today
+                                <div class="g_right_line"></div>
+                            </h1>
+                            <h1 class="section-title d-flex d-md-none">
+                                Reserve Your Residence
+                                <div class="g_right_line"></div>
+                            </h1>
+                            <p class="amenities_sab_title">An exclusive collection of ultra-luxury homes awaits. With limited inventory, now is the moment to secure your place in a landmark address destined for generations.</p>
+                        </div>
 
-                 <div class="button-box" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <span>Get Exclusive Brochure</span>
+                        <div class="form-box">
+                            <div class="">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" />
+                            </div>
+                            <div class="">
+                                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" />
+                            </div>
+                            <div class="">
+                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address" />
+                            </div>
+
+                            <div class="">
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Meessage" />
+                            </div>
+
+                            <div class="contact_button">
+                                <button btn class="btn w-100"><span>Submit</span></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-              </div>
-   
-      </div>
-      </div>
-   
-  
-  </section>
-
-<!-- Amenities-->
-  <section class="amenities-section">
-    <div class="container">
-      <div class="row">
-        <div class="highlight-left-box">
-              <h1 class="section-title ">Amenities <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">Every amenity has been curated to match the global standards of luxury. From private indulgences to social gatherings, this project ensures an experience that is both personal and world-class.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="amenities-box">
-     
-          <div class="amenities_main_box">
-            <div class="amenities_img_box">
-              <img src="images/amenities/swimming-pool.png" alt="" class="img-fluid">
             </div>
-            <div class="amenities_bottom_box">
-              <img src="images/amenities/amenities-icon/swimming-icon.png" alt="">
-              <p>Infinity Pool</p>
+            <img src="images/contact_img_building.png" alt="" class="buiding_img img-fluid" />
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer_section">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <img src="images/qr-code.png" alt="" class="img-fluid" width="100px" />
+                        <h1>RERA NO. XXXXXXXXXXXX</h1>
+                        <p>
+                            This is only for information purposes and does not constitute any offer or contract. customers are advised to have their independent evaluation. artistic impression as shown is a pictorial conceptualization and
+                            indicative only and actual may differ. the sale is subject to the terms of booking application and agreement for sale. all information, contents, plans, specifications are subject to change as may he decided by
+                            the promoter or directed by any competent authority subject to applicable laws and availability. all furniture, fittings and specifications shown herein are for portraying a possible layout/interior for reference
+                            purposes only and do not form part of the standard specifications/amenities/services to be provided in the unit/project and is subject to changes. the provision of social infrastructure and other amenities will
+                            be as per approved plans.
+                        </p>
+                        <div class="g_line_bottom"></div>
+                    </div>
+
+                    <div class="footer_bottom">
+                        <p class="dis">Disclaimer & Privacy Policy</p>
+                        <p class="copy_right">Copyright ©Demo 2025. All Rights Reserved</p>
+                        <p class="comapny_promo">Crafted By: <span>GTF Technologies</span></p>
+                    </div>
+                </div>
             </div>
-          </div>
-        
-          <div class="amenities_main_box">
-             <div class="amenities_top_box">
-              <img src="images/amenities/amenities-icon/theater.svg" alt="">
-              <p>Private Theatre</p>
+        </footer>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="modal_form_box">
+                            <div class="modal-header">
+                                <img src="images/logo-icon.svg" alt="" class="img-fluid" width="45px" />
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="form-box">
+                                <div class="">
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" />
+                                </div>
+                                <div class="">
+                                    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" />
+                                </div>
+                                <div class="">
+                                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address" />
+                                </div>
+
+                                <div class="">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Meessage" />
+                                </div>
+                                <div class="d-flex text-white gap-2" style="font-size: 14px;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked />
+                                    <label class="form-check-label" for="exampleCheck1">
+                                        I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.
+                                    </label>
+                                </div>
+
+                                <div class="contact_button">
+                                    <button btn class="btn w-100"><span>Submit</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="amenities_img_box">
-              <img src="images/amenities/theater.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="footer_bottom_cta d-md-none d-block">
+            <div class="cta_button">
+                <a href="tel:+91-9999999999" class="">Tap To Call</a>
+                <div class="g_footer_cta"></div>
+                <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Query Now</a>
+                <div class="g_footer_cta"></div>
+                <a href="https://api.whatsapp.com/send?phone=+919999999999 &text=Hello, Looking for, New Layout. Get in touch with me my name is">Whatsapp</a>
             </div>
-           
-          </div>
-        
-          <div class="amenities_main_box">
-            <div class="amenities_img_box">
-              <img src="images/amenities/gym.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="amenities_bottom_box">
-              <img src="images/amenities/amenities-icon/yoga.svg" alt="">
-              <p>Smart Fitness Studio</p>
-            </div>
-          </div>
-        
-          <div class="amenities_main_box">
-            <div class="amenities_top_box">
-              <img src="images/amenities/amenities-icon/play-area.svg" alt="">
-              <p>Children’s Play Studio</p>
-            </div>
-            <div class="amenities_img_box">
-              <img src="images/amenities/play-area.jpg" alt="" class="img-fluid">
-            </div>
-            
-          </div>
-        
-          <div class="amenities_main_box">
-            <div class="amenities_img_box">
-              <img src="images/amenities/spa.jpg" alt="" class="img-fluid">
-            </div>
-            <div class="amenities_bottom_box">
-              <img src="images/amenities/amenities-icon/spa.svg" alt="">
-              <p>Luxury Spa</p>
-            </div>
-          </div>
-        
-    </div>
-
-<div class="container">
-   <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span>Get Exclusive brochure</span>
-        </div>
-</div>
-  </section>
-<!-- Floor Plan -->
-  <section class="section_floor">
-    <div class="container">
-      <div class="row">
-        <div class="highlight-left-box">
-              <h1 class="section-title ">Floor Plans <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">Layouts that elevate spatial design to an art form. Expansive living areas, private decks, natural light, and intelligent flow ensure a home that balances luxury with liveability.</p>
-        </div>
-<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active floor-button" id="pills-home-tab" data-bs-toggle="pill" 
-      data-bs-target="#pills-home" type="button" role="tab" 
-      aria-controls="pills-home" aria-selected="true">
-      2 BHK
-      <span class="diamond tl"></span>
-  <span class="diamond tr"></span>
-  <span class="diamond bl"></span>
-  <span class="diamond br"></span>
-    </button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link floor-button" id="pills-profile-tab" data-bs-toggle="pill" 
-      data-bs-target="#pills-profile" type="button" role="tab" 
-      aria-controls="pills-profile" aria-selected="false">
-      3 BHK
-      <span class="diamond tl"></span>
-  <span class="diamond tr"></span>
-  <span class="diamond bl"></span>
-  <span class="diamond br"></span>
-    </button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link floor-button" id="pills-contact-tab" data-bs-toggle="pill" 
-      data-bs-target="#pills-contact" type="button" role="tab" 
-      aria-controls="pills-contact" aria-selected="false">
-      4 BHK
-      <span class="diamond tl"></span>
-  <span class="diamond tr"></span>
-  <span class="diamond bl"></span>
-  <span class="diamond br"></span>
-    </button>
-  </li>
-</ul>
-
-
-
-
-<div class="tab-content" id="pills-tabContent">
-  <!-- Home Tab -->
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-    <div class="row text-white align-items-center">
-      <div class="col-md-8 col-12 text-center">
-        <img src="images/floor-plan.png" class="img-fluid" alt="Home Image">
-      </div>
-      <div class="col-md-4 col-12">
-        <div class="floor_main_box">
-         <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/super-area.svg" alt="">
-            <div class="small_box">
-              <h4>Super Area</h4>
-              <p>2500 Sq. Ft.</p>
-            </div>
-
-          </div>
-          <div class="floor_g_line"></div>
-        </div>
-        <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/scale.svg" alt="">
-            <div class="small_box">
-              <h4>Carpet Area</h4>
-              <p>1500 Sq. Ft.</p>
-            </div>
-
-          </div>
-          <div class="floor_g_line"></div>
-        </div>
-        <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/balcony.svg" alt="">
-            <div class="small_box">
-              <h4>Balcony Area</h4>
-              <p>1200 Sq. Ft.</p>
-            </div>
-
-          </div>
-          
-        </div>
-       </div>
-      </div>
-      
-    </div>
-  </div>
-
-  <!-- Profile Tab -->
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-    <div class="row text-white align-items-center">
-       <div class="col-md-8 col-12 text-center">
-        <img src="images/floor-plan.png" class="img-fluid" alt="Profile Image">
-      </div>
-      <div class="col-md-4 col-12">
-         <div class="floor_main_box">
-         <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/super-area.svg" alt="">
-            <div class="small_box">
-              <h4>Super Area</h4>
-              <p>2500 Sq. Ft.</p>
-            </div>
-
-          </div>
-          <div class="floor_g_line"></div>
-        </div>
-        <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/scale.svg" alt="">
-            <div class="small_box">
-              <h4>Carpet Area</h4>
-              <p>1500 Sq. Ft.</p>
-            </div>
-
-          </div>
-          <div class="floor_g_line"></div>
-        </div>
-        <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/balcony.svg" alt="">
-            <div class="small_box">
-              <h4>Balcony Area</h4>
-              <p>1200 Sq. Ft.</p>
-            </div>
-
-          </div>
-          
-        </div>
-       </div>
-      </div>
-      
-     
-    </div>
-  </div>
-
-  <!-- Contact Tab -->
-  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-    
-      <div class="row text-white align-items-center">
-        <div class="col-md-8 col-12 text-center">
-        <img src="images/floor-plan.png" class="img-fluid" alt="Contact Image">
-      </div>
-      <div class="col-md-4 col-12">
-       <div class="floor_main_box">
-         <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/super-area.svg" alt="">
-            <div class="small_box">
-              <h4>Super Area</h4>
-              <p>2500 Sq. Ft.</p>
-            </div>
-
-          </div>
-          <div class="floor_g_line"></div>
-        </div>
-        <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/scale.svg" alt="">
-            <div class="small_box">
-              <h4>Carpet Area</h4>
-              <p>1500 Sq. Ft.</p>
-            </div>
-
-          </div>
-          <div class="floor_g_line"></div>
-        </div>
-        <div class="floor_right-content_box">
-          <div class="floor_box_start">
-            <img src="images/icons/balcony.svg" alt="">
-            <div class="small_box">
-              <h4>Balcony Area</h4>
-              <p>1200 Sq. Ft.</p>
-            </div>
-
-          </div>
-          
-        </div>
-       </div>
-      </div>
-      
-      
-    </div>
-    </div>
-  
-</div>
-
- <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span>View Plan</span>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-<!-- Price List -->
-
- <section class="price_list_section">
-  <video class="vedio-section" autoplay muted loop playsinline>
-    <source src="images/price_video.mp4" type="video/mp4">
-  </video>
-
-  <!-- Overlay Layer -->
-  <div class="video-overlay"></div>
-
-  <div class="container content-box">
-    <div class="row">
-     <div class="price_list-left-box">
-              <h1 class="section-title ">Residences & Pricing <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">Crafted for connoisseurs of luxury, each residence unites scale, privacy, and prestige. A rare home, remarkable in every sense, embodying timeless elegance, grandeur, distinction, and unrivaled sophistication.</p>
         </div>
 
-        <div>
-          <table class="table table-borderless price_table">
- 
-  <tbody>
-    <tr>
-      <td>
-        <div class="price_small_section">
-          <p>Typology</p>
-          <h4>2 BHK</h4>
-        </div>
-      </td>
-      <td>
-        <div class="price_small_section">
-          <p>Size</p>
-          <h4>1750 <sub>Sq.ft.</sub></h4>
-        </div>
-      </td>
-      <td>
-        <div class="price_small_section">
-          <p>Starting From</p>
-          <h4>₹ 2 CR*  <sub>Onwards</sub></h4>
-        </div>
-      </td>
-      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    </tr>
-    <tr>
-      <td>
-        <div class="price_small_section">
-          <p>Typology</p>
-          <h4>2 BHK</h4>
-        </div>
-      </td>
-      <td>
-        <div class="price_small_section">
-          <p>Size</p>
-          <h4>1750 <sub>Sq.ft.</sub></h4>
-        </div>
-      </td>
-      <td>
-        <div class="price_small_section">
-          <p>Starting From</p>
-          <h4>₹ 2 CR*  <sub>Onwards</sub></h4>
-        </div>
-      </td>
-      
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    </tr>
-      <div class="floor_g_line"></div>
+        <script src="js/script.js"></script>
 
-     <tr>
-      <td>
-        <div class="price_small_section">
-          <p>Typology</p>
-          <h4>2 BHK</h4>
-        </div>
-      </td>
-      <td>
-        <div class="price_small_section">
-          <p>Size</p>
-          <h4>1750 <sub>Sq.ft.</sub></h4>
-        </div>
-      </td>
-      <td>
-        <div class="price_small_section">
-          <p>Starting From</p>
-          <h4>₹ 2 CR*  <sub>Onwards</sub></h4>
-        </div>
-      </td>
-      
+        <!-- Swiper JS -->
+        <script>
+            // Top Swiper
+            var swiper1 = new Swiper(".mySwiper1", {
+                slidesPerView: 4,
+                centeredSlides: true,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        // mobile
+                        slidesPerView: 1,
+                        centeredSlides: true,
+                    },
+                    768: {
+                        // tablet
+                        slidesPerView: 2,
+                        centeredSlides: false,
+                    },
+                    1024: {
+                        // desktop
+                        slidesPerView: 4,
+                        centeredSlides: true,
+                    },
+                },
+            });
 
-    </tr>
-  </tbody>
-</table>
+            // Bottom Swiper
+            var swiper2 = new Swiper(".mySwiper2", {
+                slidesPerView: 4,
+                centeredSlides: true,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    0: {
+                        // mobile
+                        slidesPerView: 1,
+                        centeredSlides: true,
+                    },
+                    768: {
+                        // tablet
+                        slidesPerView: 2,
+                        centeredSlides: false,
+                    },
+                    1024: {
+                        // desktop
+                        slidesPerView: 4,
+                        centeredSlides: true,
+                    },
+                },
+            });
 
- <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span>Get pricing details</span>
-        </div>
-
-        </div>
-
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Location Map -->
- <section class="location-section">
-<div class="container">
-  <div class="row">
-    <div class="location-left-box">
-              <h1 class="section-title ">LOCATION ADVANTAGES <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">Set in the heart of the city’s most sought-after enclave, the project combines exclusivity with unmatched connectivity. Surrounded by fine dining, elite schools, luxury retail, and cultural hubs, this address ensures that every need is just minutes away.</p>
-        </div>
-        <div class="col-md-4 col-12  p-1  order-md-0 order-1">
-          <div class="location_left_main_box ">
-
-            <div class="location_main_box">
-            <div class="location_small_box">
-              <h3>5 mINS </h3>
-              <p>from Luxury Mall & Fine Dining District</p>
-            </div>
-            <div class="g_left_line"></div>
-          </div>
-            <div class="location_main_box">
-            <div class="location_small_box">
-              <h3>5 mINS </h3>
-              <p>from Luxury Mall & Fine Dining District</p>
-            </div>
-            <div class="g_left_line"></div>
-          </div>
-            <div class="location_main_box">
-            <div class="location_small_box">
-              <h3>5 mINS </h3>
-              <p>from Luxury Mall & Fine Dining District</p>
-            </div>
-            <div class="g_left_line"></div>
-          </div>
-
-          </div>
-        </div>
-        <div class="col-md-4 col-12  order-md-1 order-0">
-
-          <div class="location_middle_box">
-            <div class="location_g_left"></div>
-            <img src="images/location-map.png" alt="" class="img-fluid">
-            <div class="location_g_right"></div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12 p-0  order-md-2 order-2">
- <div class="location_right_main_box">
-
-          
-            <div class="location_main_box">
-            <div class="g_right_line"></div>
-
-            <div class="location_right_small_box">
-              <h3>5 mINS </h3>
-              <p>from Luxury Mall & Fine Dining District</p>
-            </div>
-          </div>
-            <div class="location_main_box">
-            <div class="g_right_line"></div>
-
-            <div class="location_right_small_box">
-              <h3>5 mINS </h3>
-              <p>from Luxury Mall & Fine Dining District</p>
-            </div>
-          </div>
-            <div class="location_main_box">
-            <div class="g_right_line"></div>
-
-            <div class="location_right_small_box">
-              <h3>5 mINS </h3>
-              <p>from Luxury Mall & Fine Dining District</p>
-            </div>
-          </div>
-
-          </div>
-        </div>
-
-
-  </div>
-  <div class="button-box w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span>Get Exclusive brochure</span>
-        </div>
-</div>
- </section>
-
-<!-- Gallery Section -->
- <section class="gallery-section">
-  <div class="container">
-    <div class="row">
-      <div class="gallery-left-box">
-              <h1 class="section-title ">Gallery <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">Step into a world of refined artistry and design. Each space, from the grand façade to the intimate interiors, has been meticulously crafted to reflect a lifestyle reserved for the privileged few.</p>
-        </div>
-    </div>
-  </div>
-
-  <div class="conatiner-fluid">
-   
-
-  <div class="gallery-box">
-    <!-- Top Row -->
-    <div class="swiper mySwiper1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-      </div>
-    </div>
-
-    <!-- Bottom Row -->
-    <div class="swiper mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g1.png" class="img-fluid"></div>
-        <div class="swiper-slide"><img src="images/g2.png" class="img-fluid"></div>
-        
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
- <div class="gallery_bottom">
-    <div class="swiper-pagination"></div>
-    
- <div class="button-box " data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <span>Get Exclusive brochure</span>
-        </div>
-      <!-- Navigation -->
-    <div class="gallery-nav">
-      <div class="gallery-btn gallery-prev"><img src="images/icons/left-arrow.png" alt=""></div>
-      <div class="gallery-btn gallery-next"><img src="images/icons/right-arrow.png" alt=""></div>
-    </div>
-    </div>
-      </div>
-    </div>
-  </div>
-
-    </div>
-  </div>
-
- </section>
-
-<!-- About Developer section -->
-
-<section class="developer-section">
-  <video class="developer-vedio-section" autoplay muted loop playsinline>
-    <source src="images/developer-vedio.mp4" type="video/mp4">
-  </video>
-
-  <!-- Overlay Layer -->
-  <div class="video-overlay"></div>
-
-  <div class="container content-box">
-    <div class="row">
-       <div class="developer_list-left-box">
-        <div class="mb-5">
-          <img src="images/logo-icon.svg" alt="" width="45px">
-        </div>
-              <h1 class="section-title ">ABOUT DEVELOPER <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">With a legacy of delivering world-class residences and iconic landmarks, Signature Realty has earned the trust of the world’s most discerning homeowners. This ultra-luxury project reflects our vision to craft timeless living spaces for a select few.</p>
-        </div>
-
-        <div class="">
-          <div class="developer_main_box">
-          <div class="developer-box">
-            <h3>20+</h3>
-            <p>Years of Excellence</p>
-          </div>
-          <div class="developer-box">
-            <h3>50+</h3>
-            <p>Luxury Projects</p>
-          </div>
-          <div class="developer-box">
-            <h3>12</h3>
-            <p>Design Awards</p>
-          </div>
-        </div>
-        </div>
-        <!-- <div class="col-md 4 col-12"></div>
-        <div class="col-md 4 col-12"></div> -->
-
-    </div>
-  </div>
-
-
-</section>
-<!-- Contact section -->
-<section class="contact-form">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-7 col-12">
-        <div class="price_list-left-box">
-              <h1 class="section-title  d-none d-md-flex">Reserve Your Private Residence Today <div class="g_right_line"></div></h1>
-              <h1 class="section-title d-flex d-md-none">Reserve Your Residence <div class="g_right_line"></div></h1>
-              <p class="amenities_sab_title">An exclusive collection of ultra-luxury homes awaits. With limited inventory, now is the moment to secure your place in a landmark address destined for generations.</p>
-        </div>
-
-        <div class="form-box">
-          
-            <div class="">
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
-            </div>
-            <div class="">
-              <input type="tel" class="form-control " id="exampleInputPassword1" placeholder="Phone Number">
-            </div>
-            <div class="">
-              <input type="email" class="form-control " id="exampleInputPassword1" placeholder="Email Address">
-            </div>
-            
-            <div class="">
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Meessage">
-            </div>
-  
-          <div class="contact_button">
-            <button btn class="btn w-100"><span>Submit</span></button>
-          </div>      
-        </div>
-      </div>
-    </div>
-  </div>
-<img src="images/contact_img_building.png" alt="" class="buiding_img img-fluid">
-</section>
-
-<!-- Footer -->
-<footer class="footer_section">
-  <div class="container">
-    <div class="row">
-     <div class="text-center">
-       <img src="images/qr-code.png" alt="" class="img-fluid" width="100px">
-       <h1>RERA NO. XXXXXXXXXXXX</h1>
-       <p>This is only for information purposes and does not constitute any offer or contract. customers are advised to have their independent evaluation. artistic impression as shown is a pictorial conceptualization and indicative only and actual may differ. the sale is subject to the terms of booking application and agreement for sale. all information, contents, plans, specifications are subject to change as may he decided by the promoter or directed by any competent authority subject to applicable laws and availability. all furniture, fittings and specifications shown herein are for portraying a possible layout/interior for reference purposes only and do not form part of the standard specifications/amenities/services to be provided in the unit/project and is subject to changes. the provision of social infrastructure and other amenities will be as per approved plans.</p>
-       <div class="g_line_bottom"></div>
-     </div>
-
-     <div class="footer_bottom">
-
-      <p class="dis">Disclaimer & Privacy Policy</p>
-      <p class="copy_right">Copyright ©Demo 2025. All Rights Reserved</p>
-      <p class="comapny_promo">Crafted By: <span>GTF Technologies</span></p>
-
-     </div>
-
-
-    </div>
-  </div>
-   
-</footer>
-
-
-
-<!-- Modal -->
-
-
-
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <div class="modal-body">
-        
-        <div class="modal_form_box">
-          <div class="modal-header">
-        <img src="images/logo-icon.svg" alt="" class="img-fluid" width="45px">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-           <div class="form-box">
-            
-          
-            <div class="">
-              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
-            </div>
-            <div class="">
-              <input type="tel" class="form-control " id="exampleInputPassword1" placeholder="Phone Number">
-            </div>
-            <div class="">
-              <input type="email" class="form-control " id="exampleInputPassword1" placeholder="Email Address">
-            </div>
-            
-            <div class="">
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Meessage">
-            </div>
-            <div class="d-flex text-white gap-2" style="font-size: 14px;">
-    <input type="checkbox" class="form-check-input " id="exampleCheck1" checked>
-    <label class="form-check-label" for="exampleCheck1">I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</label>
-  </div>
-  
-          <div class="contact_button">
-            <button btn class="btn w-100"><span>Submit</span></button>
-          </div>      
-        </div>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-    <script src="js/script.js"></script>
-
-
-
-  <!-- Swiper JS -->
- <script>
-    // Top Swiper
-    var swiper1 = new Swiper(".mySwiper1", {
-      slidesPerView: 4,
-      centeredSlides: true,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-       breakpoints: {
-    0: {               // mobile
-      slidesPerView: 1,
-      centeredSlides: true,
-    },
-    768: {             // tablet
-      slidesPerView: 2,
-      centeredSlides: false,
-    },
-    1024: {            // desktop
-      slidesPerView: 4,
-      centeredSlides: true,
-    }
-  }
+            // Common Nav Buttons
+            document.querySelector(".gallery-next").addEventListener("click", () => {
+                swiper1.slideNext();
+                swiper2.slideNext();
+            });
+            document.querySelector(".gallery-prev").addEventListener("click", () => {
+                swiper1.slidePrev();
+                swiper2.slidePrev();
+            });
+        </script>
+        <script>
+  document.querySelectorAll('.offcanvas .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      let offcanvasEl = document.querySelector('#offcanvasDarkNavbar');
+      let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl); 
+      offcanvas.hide(); // offcanvas ko band kar dega
     });
-
-    // Bottom Swiper
-    var swiper2 = new Swiper(".mySwiper2", {
-      slidesPerView: 4,
-      centeredSlides: true,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-    0: {               // mobile
-      slidesPerView: 1,
-      centeredSlides: true,
-    },
-    768: {             // tablet
-      slidesPerView: 2,
-      centeredSlides: false,
-    },
-    1024: {            // desktop
-      slidesPerView: 4,
-      centeredSlides: true,
-    }
-  }
-    });
-
-    // Common Nav Buttons
-    document.querySelector(".gallery-next").addEventListener("click", () => {
-      swiper1.slideNext();
-      swiper2.slideNext();
-    });
-    document.querySelector(".gallery-prev").addEventListener("click", () => {
-      swiper1.slidePrev();
-      swiper2.slidePrev();
-    });
-  </script>
-
-</body>
+  });
+</script>
+    </body>
 </html>
