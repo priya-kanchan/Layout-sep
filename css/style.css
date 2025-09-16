@@ -1337,8 +1337,10 @@ text-transform: capitalize;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 91%;margin: auto;
-  margin-top: 70px;/* gap: 47px; */}
+  width: 91%;
+  margin: auto;
+  /* gap: 47px; */
+}
 
 .developer-box{
   display: flex;
