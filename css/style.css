@@ -73,6 +73,10 @@
   --font-Source-Code-Pro: "Source Code Pro", monospace; 
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
 
 .navbar-container {
   max-width: 94% !important;
