@@ -252,10 +252,10 @@ width: 100px;
     padding: 0 30px;
 }
     .highlight_left_box::after {
-            right: 8px;
+            right: 1px;
     }
 .highlight_left_box img{
-    width: 95%;
+    width: 97%;
 }
 /* amenities */
 .amenities_main_box {
@@ -514,6 +514,9 @@ letter-spacing: 0.358px;
     width: 330px;
 } */
 
+.overview_img-box::after{
+    right: -2px;
+}
 
 }
 @media(max-width:390px){

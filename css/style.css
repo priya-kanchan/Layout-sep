@@ -504,6 +504,7 @@ text-transform: capitalize;
 .overview_img-box img {
   position: relative;
   z-index: 2; /* image on top */
+  width: 98%;
 }
 
 .overview_img-box::after {
@@ -511,7 +512,7 @@ text-transform: capitalize;
   position: absolute;
   top: 0px;    /* gap from top */
   left: 10px;   /* gap from left */
-  right: -10px; /* gap on right */
+  right: 0; /* gap on right */
   bottom: 0px; /* gap on bottom */
   border: 1px solid var(--golden-color);
   z-index: 1; /* border behind image */
