@@ -430,18 +430,12 @@ border-block: 1px solid var(--golden-color);
 
 
 /* Overview */
-.overview-section{
-padding: 80px 92px;
-background-color: var(--background-color);
-color: #fff;
-position: relative;
-width: 100%;
-}
+.overview-section{padding: 80px 0;background-color: var(--background-color);color: #fff;position: relative;width: 100%;}
 .overview-left-box{
  background: #000414;
-background: linear-gradient(90deg,rgba(0, 4, 20, 0) 0%, rgba(0, 4, 20, 1) 100%);
-width: 100%;
-padding: 60px 30px;
+ background: linear-gradient(90deg,rgba(0, 4, 20, 0) 0%, rgba(0, 4, 20, 1) 100%);
+ width: 100%;
+ padding: 60px 30px 60px 0;
 }
 .section-title{
 color: var(--golden-color);
@@ -1172,7 +1166,7 @@ text-transform: capitalize;
       position: relative;
       /* max-width: 1200px;
       margin: auto; */
-      padding: 40px 0;
+      /* padding: 40px 0; */
   width: 100%;
 
     }
