@@ -1634,7 +1634,7 @@ border-radius: 0 !important;
   width: 100%;
   height: auto;
   gap: 15px;
-  padding: 5px 20px;
+  padding: 0px 20px;
 }
 .footer_bottom_cta .cta_button a{
 text-decoration: none;

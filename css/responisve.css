@@ -232,6 +232,7 @@ width: 100px;
     /* Highlights */
 .highlight_main_box {
     text-align: center;
+    padding: 0;
 }
 .highlight_right_box{
     display: none;
@@ -252,8 +253,7 @@ width: 100px;
 }
 .highlight_left_box::after {
    
-    right: 0px;
-  
+right: -5px;
 }
 
 /* amenities */
@@ -261,7 +261,7 @@ width: 100px;
     flex: 1 1 calc(50% - 25px); /* 2 per row */
   }
    .amenities_img_box img{
-  height: 250px;
+  height: 216px;
  }
  .amenities_main_box:last-child{
     display: none;
@@ -506,6 +506,13 @@ letter-spacing: 0.358px;
     .form-box .form-control, .form-box .form-control::placeholder {
        font-size: 12px;
     }
+
+    /* .highlight_left_box img {
+    position: relative;
+    z-index: 2;
+    width: 330px;
+} */
+
 
 }
 @media(max-width:390px){
