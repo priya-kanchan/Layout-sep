@@ -261,6 +261,7 @@ font-size: 14px;
 }
 .price_table {
     margin-top: 0;
+            margin-bottom: 0;
 }
 .price_list_section .button-box{
   margin-top: 20px;
