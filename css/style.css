@@ -420,9 +420,9 @@ header {
       transform: translateX(-50%) rotate(180deg);
       z-index: 99;
 }
-.mobile_price_content .banner-para{
-margin-top: 0;
-    padding: 20px 0;
+.mobile_price_content .banner-para {
+    margin-top: 0;
+    padding: 15px 0;
 }
 .mobile_price_content>.banner-para{
 border-block: 1px solid var(--golden-color);
@@ -1646,4 +1646,7 @@ line-height: normal;
   background: linear-gradient(2deg,rgba(5, 19, 34, 0) 0%, rgba(5, 19, 34, 1) 50%, rgba(5, 19, 34, 0) 100%);
   width: 1px;
   height: 44px;
+}
+.modal_form_box .form-check-label{
+  font-size: 14px;
 }
