@@ -211,7 +211,6 @@ width: 100px;
 
 
 .highlight-section .button-box {
-    margin-top: 26px;
     justify-content: flex-start;
     padding: 0 30px;
 }
@@ -452,6 +451,9 @@ letter-spacing: 0.358px;
 font-size: 12px;
 line-height: 15.751px; 
 letter-spacing: 0.358px;
+}
+.amenities-section .button-box, .section_floor .button-box, .location-section .button-box, .overview_main_box .button-box, .price_list_section .button-box {
+    margin-top: 50px;
 }
 
 }
