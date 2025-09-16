@@ -251,11 +251,12 @@ width: 100px;
     justify-content: flex-start;
     padding: 0 30px;
 }
-.highlight_left_box::after {
-   
-right: -5px;
+    .highlight_left_box::after {
+            right: 8px;
+    }
+.highlight_left_box img{
+    width: 95%;
 }
-
 /* amenities */
 .amenities_main_box {
     flex: 1 1 calc(50% - 25px); /* 2 per row */
