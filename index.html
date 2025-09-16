@@ -796,21 +796,21 @@
 
                         <div class="form-box">
                             <div class="">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" />
+                                <input type="text" class="form-control" id="qsendername1" placeholder="Enter Name" />
                             </div>
                             <div class="">
-                                <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" />
+                                <input type="tel" class="form-control" id="qsendernumber1" placeholder="Phone Number" />
                             </div>
                             <div class="">
-                                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address" />
+                                <input type="email" class="form-control" id="qsenderemail1" placeholder="Email Address" />
                             </div>
 
                             <div class="">
-                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Meessage" />
+                                <input type="text" class="form-control" id="qsendermessage1" placeholder="Meessage" />
                             </div>
 
                             <div class="contact_button">
-                                <button btn class="btn w-100"><span>Submit</span></button>
+                                <button btn class="btn w-100" id="submitquery1"><span>Submit</span></button>
                             </div>
                         </div>
                     </div>
@@ -858,17 +858,17 @@
                             </div>
                             <div class="form-box">
                                 <div class="">
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name" />
+                                    <input type="text" class="form-control" id="qsendername" placeholder="Enter Name" />
                                 </div>
                                 <div class="">
-                                    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Phone Number" />
+                                    <input type="tel" class="form-control" id="qsendernumber" placeholder="Phone Number" />
                                 </div>
                                 <div class="">
-                                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email Address" />
+                                    <input type="email" class="form-control" id="qsenderemail" placeholder="Email Address" />
                                 </div>
 
                                 <div class="">
-                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Meessage" />
+                                    <input type="text" class="form-control" id="qsendermessage" placeholder="Meessage" />
                                 </div>
                                 <div class="d-flex text-white gap-2">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" checked />
@@ -878,7 +878,7 @@
                                 </div>
 
                                 <div class="contact_button">
-                                    <button btn class="btn w-100"><span>Submit</span></button>
+                                    <button btn class="btn w-100" id="SubmitQuery"><span>Submit</span></button>
                                 </div>
                             </div>
                         </div>
@@ -900,13 +900,74 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
-
-        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <script src="js/script.js"></script>
         <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/script.js"></script>
+
+
+  <!-- <script type="text/javascript" language="javascript">
+      var versionUpdate = (new Date()).getTime();
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "https://api2.gtftech.com/scripts/queryform.min.ssl.js?v=" + versionUpdate;
+      document.body.appendChild(script);
+   </script> -->
+
+<!-- <script>
+var AgentInfo = {
+         "vAgentID": "****",
+         "vProject": " ",
+         "vURL": "",
+         "thankspageurl": "thanks.htm",
+      };
+
+
+      $('#preferedtime').hide();
+
+      $("#SubmitQuery").click(function () {
+
+         var FormInfo = {
+            "SenderControlID": "qsendername",
+            "SenderControlMobileID": "qsendernumber",
+            "SenderControlEmailID": "qsenderemail",
+            "SenderControlMsgID": "qsendermessage"
+         };
+
+         SubmitQueryData(AgentInfo, FormInfo);
+      });
+      $("#submitquery1").click(function () {
+
+         var FormInfo = {
+            "SenderControlID": "qsendername1",
+            "SenderControlMobileID": "qsendernumber1",
+            "SenderControlEmailID": "qsenderemail1",
+            "SenderControlMsgID": "qsendermessage1"
+         };
+
+         SubmitQueryData(AgentInfo, FormInfo);
+      });
+
+
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- Swiper JS -->
         <script>
