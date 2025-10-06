@@ -1,5 +1,5 @@
 @media (max-width:1400px){
-    .highlight-section,.amenities-section,.section_floor,.price_list_section,.location-section, .gallery-section, .developer-section, .contact-form, .footer_section{
+    .highlight-section,.amenities-section,.section_floor,.price_list_section,.location-section, .gallery-section, .developer-section, .contact-form{
 padding: 60px 0;
 }
 
@@ -11,6 +11,7 @@ padding: 60px 0;
 }
     .location_small_box p, .location_right_small_box p{
         font-size: 14px;
+           
     }
     .banner_content_box h1{
         font-size: 26px;
@@ -80,10 +81,10 @@ padding: 60px 0;
         margin-bottom: 40px;
     }
     .price_list_section .button-box {
-    margin-top: 20px;
+    margin-top: 74px;
 }
 .highlight-section .button-box {
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 
@@ -175,37 +176,36 @@ padding: 60px 0;
 
 .section-title{
 font-size: 18px;
+        margin-bottom: 30px;
 }
 .overview-left-box{
         background: #000414;
         background: linear-gradient(0deg, rgba(0, 4, 20, 1) 0%, rgba(0, 4, 20, 0) 100%);
-        padding: 40px 30px 94px 30px;
+        padding: 16px 16px 94px 16px;
     }
 .highlight_g_left::before, .highlight_g_left::after{
            width: 150px;
-        left: -55px;
+           left: -63px;
+           px;
     }
 .highlight_g_left::before{
 
-top: 120px;
+top: 110px;
 }
  .highlight_g_left::after{
 
-top: -88px;
-
+top: -81px;
 }
 .highlight_g_right::before, .highlight_g_right::after{
             width: 150px;
-        left: -55px;
+            left: -63px;
     }
-.highlight_g_right::before{
-top: 120px;
-}
+.highlight_g_right::before{top: 110px;}
 .highlight_g_right::after{
-    top: -88px;
+    top: -81px;
 }
 .center_box {
-    gap: 12px;
+    gap: 40px;
 }
 
 
@@ -217,11 +217,10 @@ width: 100px;
 }
 .para {
   width: 100%;
-        font-size: 12px;
-        line-height: 20px;
-        letter-spacing: 0.5px;
-        margin-bottom: 35px;
-
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin-bottom: 35px;
 }
 .overview_img-box {
    margin-top: -90px;
@@ -250,12 +249,15 @@ width: 100px;
 .highlight-section .button-box {
     justify-content: flex-start;
     padding: 0 30px;
+    margin-top: 30px;
 }
     .highlight_left_box::after {
             right: 1px;
     }
 .highlight_left_box img{
     width: 97%;
+    height: auto;
+    object-fit: cover;
 }
 /* amenities */
 .amenities_main_box {
@@ -280,12 +282,13 @@ letter-spacing: 0.701px;
 
 #pills-tab {
     gap: 5px;
+    margin-bottom: 40px;
 }
 .floor_right-content_box{
 width: 100%;
 }
 .floor_main_box{
-    margin-top: 35px;
+    margin-top: 30px;
 }
 /* Price list */
 .price_small_section h4 {
@@ -331,7 +334,7 @@ font-size: 14px;
 }
 .location_right_main_box .g_right_line{
                    transform: rotate(-90deg);
-                   margin-left: -20px;
+                        margin-left: -22px;
                    width: 85px !important;
                    margin-top: 26px;
 }
@@ -456,8 +459,8 @@ font-size: 20px;
 }
 .overview_main_box {
    
-    align-items: start;
-    flex-direction: column;
+           align-items: center;
+        flex-direction: column;
 }
 .highlight_box h3{
     line-height: 22px;
@@ -514,9 +517,41 @@ letter-spacing: 0.358px;
     width: 330px;
 } */
 
-.overview_img-box::after{
+/* .overview_img-box::after{
     right: -2px;
+} */
+ .whatsapp-box{
+    display: none;
+ }
+.highlight-section .section-title{
+    margin-bottom: 32px;
 }
+.overview_img-box img{
+    width: 319.32px;
+height: 220.451px;
+}
+.overview_main_box .overview_img-box{
+    align-items: start;
+}
+
+.highlight_g_left img, .highlight_g_right img{
+    width: 22px;
+    height: 22px;
+}
+
+.location_g_left{
+    right: 0;
+}
+.location_g_right{
+    left: 0;
+}
+.location_middle_box img{
+           padding: 0 15px;
+}
+
+
+
+
 
 }
 @media(max-width:390px){
@@ -537,6 +572,7 @@ letter-spacing: 0.358px;
     }
         .section-title {
         font-size: 15px;
+        margin-bottom: 30px;
     }
     .amenities_top_box p, .amenities_bottom_box p {
     font-size: 14px;
